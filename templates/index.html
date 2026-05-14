@@ -1,27 +1,37 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>Mi Aplicacion Docker</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamApp</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-
 <body>
 
-    <div class="contenedor">
+    <header>
+        <h1>StreamApp</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Series</a>
+            <a href="#">Películas</a>
+            <a href="#">Mi Lista</a>
+        </nav>
+    </header>
 
-        <h1>🐳 Mi Aplicacion Docker</h1>
+    <main>
+        <section class="hero">
+            <h2>Bienvenido a StreamApp</h2>
+            <p>Aplicación web desplegada con Flask y Docker</p>
+            <button>Ver contenido</button>
+        </section>
 
-        <p class="subtitulo">
-            Aplicacion web creada con Flask y Docker
-        </p>
-
-        <div class="card">
-            <h2>Tu IP es:</h2>
-            <p>{{request.remote_addr}}</p>
-        </div>
-
-    </div>
+        <section class="cards">
+            <div class="card">Tecnología</div>
+            <div class="card">Programación</div>
+            <div class="card">Docker</div>
+            <div class="card">Python</div>
+        </section>
+    </main>
 
 </body>
-
 </html>

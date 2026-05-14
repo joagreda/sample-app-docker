@@ -6,6 +6,6 @@ COPY . /home/myapp
 
 RUN pip install flask
 
-EXPOSE 8080
+EXPOSE 7777
 
 CMD ["python3", "sample_app.py"]
